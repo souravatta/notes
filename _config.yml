@@ -30,15 +30,15 @@ github_username:  jekyll
 relative_url: /notes/
 
 collections:
-  authors:
+  topics:
     output: true
 
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: "topics"
     values:
-      layout: "author"
+      layout: "topic"
   - scope:
       path: ""
       type: "posts"

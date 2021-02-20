@@ -5,9 +5,9 @@ layout: default
 
 <p>
   {{ page.date | date_to_string }}
-  {% assign author = site.authors | where: 'short_name', page.author | first %}
-  {% if author %}
-    - <a href="{{ author.url | relative_url }}">{{ author.name }}</a>
+  {% assign topic = site.topics | where: 'short_name', page.topic | first %}
+  {% if topic %}
+    - <a href="{{ topic.url | relative_url }}">{{ topic.name }}</a>
   {% endif %}
 </p>
 
