@@ -27,7 +27,7 @@ baseurl: "/notes" # the subpath of your site, e.g. /blog
 url: "https://souravatta.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: souravatta
 relative_url: /notes/
-repository: "https://github.com/souravatta/notes"
+repository: "https://github.com/souravatta/notes/"
 
 collections:
   topics:
