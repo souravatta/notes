@@ -25,9 +25,9 @@ show_downloads: true
 github: [metadata]
 baseurl: "/notes" # the subpath of your site, e.g. /blog
 url: "https://souravatta.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username: souravatta
 relative_url: /notes/
+repository: "https://github.com/souravatta/notes"
 
 collections:
   topics:
