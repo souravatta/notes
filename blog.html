@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog
+title: Notes
 ---
 <h1>Latest Posts</h1>
 
