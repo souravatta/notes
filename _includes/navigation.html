@@ -1,7 +1,9 @@
-<nav>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
   {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="button"{% endif %}>
       {{ item.name }}
     </a>
   {% endfor %}
+  <div class="container-fluid">
 </nav>
