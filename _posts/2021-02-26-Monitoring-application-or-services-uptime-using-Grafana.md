@@ -203,4 +203,19 @@ Assuming Grafana is already installed, if not, please follow the steps to instal
 
  <h5>Alerting using Slack</h5>
 
- 1. **Configuring Slack for Alert Notification**
+ 1. **<u>Configuring Slack for Alert Notification</u>**
+
+    * Create a new workspace in Slack.
+    * Under Apps, click on **Add apps**
+    * Click on **App directory** >> **Build** >> **Create a custom app**
+    * Give a name to the App and select the workspace. Click on **Create App**
+    * Once the App is created, under **Features**, click on **Incoming Webhooks**
+    * Under **Webhook URLs for Your Workspace**, click on **Add New Webhook to Workspace**
+    * Select the channel, where the App will post the notifications. Then, click on **Allow**
+    * Copy the Webhook Url for the particular channel
+
+    >**Note:** Don't forget to "Toggle On" the Activate Incoming Webhooks
+
+ 2. **<u>Configuring Grafana for Alert</u>**
+
+    * 
