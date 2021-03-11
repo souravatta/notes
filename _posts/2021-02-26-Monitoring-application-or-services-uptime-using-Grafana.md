@@ -74,7 +74,7 @@ wget https://github.com/prometheus/blackbox_exporter/releases/download/v0.18.0/b
 ```bash
 tar -xvf blackbox_exporter-0.14.0.linux-amd64.tar.gz
 ```
-4. Create a Blackbox Exporter user and copy the extracted binaries to the new user's bin directory. ALso, change directory ownership.
+4. Create a Blackbox Exporter user and copy the extracted binaries to the new user's bin directory. Also, change directory ownership.
 ```bash
 sudo useradd --no-create-home --shell /bin/false blackbox_exporter
 sudo mv blackbox_exporter-0.14.0.linux-amd64/blackbox_exporter /usr/local/bin/blackbox_exporter
@@ -102,20 +102,20 @@ sudo nano /etc/systemd/system/blackbox_exporter.service
 
     Copy the below lines inside `blackbox_exporter.service`:
     ```bash
-  [Unit]
-  Description=Blackbox Exporter
-  Wants=network-online.target
-  After=network-online.target
+      [Unit]
+      Description=Blackbox Exporter
+      Wants=network-online.target
+      After=network-online.target
 
-  [Service]
-  User=blackbox_exporter
-  Group=blackbox_exporter
-  Type=simple
-  ExecStart=/usr/local/bin/blackbox_exporter --config.file /etc/blackbox_exporter/blackbox.yml
+      [Service]
+      User=blackbox_exporter
+      Group=blackbox_exporter
+      Type=simple
+      ExecStart=/usr/local/bin/blackbox_exporter --config.file /etc/blackbox_exporter/blackbox.yml
 
-  [Install]
-  WantedBy=multi-user.target
-```
+      [Install]
+      WantedBy=multi-user.target
+      ```
 7. Update Blackbox Exporter's configuration file permissions.
 ```bash
 chown blackbox_exporter:blackbox_exporter /etc/blackbox_exporter/blackbox.yml
@@ -131,7 +131,7 @@ sudo systemctl enable blackbox_exporter
 systemctl status blackbox_exporter
 ```
 
-Output:
+    Output:
 ```
 ● blackbox_exporter.service - Blackbox Exporter
      Loaded: loaded (/etc/systemd/system/blackbox_exporter.service; disabled; vendor preset: enabled)
