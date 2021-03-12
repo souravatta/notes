@@ -1,0 +1,35 @@
+name: Adding-Tool
+
+on:
+  issues:
+    types: [opened]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      - name: View issue information
+        run: |
+          echo "Issue title: ${{ github.event.issue.title }}"
+          echo "Issue body: ${{ github.event.issue.body }}"
+
+# Create a md file with the name of the tool
+      - name: Create a file for the tool
+        run: |
+          cd _topics
+          touch "${{ github.event.issue.title }}".md
+          echo "${{ github.event.issue.body }}" >> "${{ github.event.issue.title }}".md
+
+      - name: Push new README.md
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.ISSUE_TOKEN }}
+          BRANCH_NAME: master

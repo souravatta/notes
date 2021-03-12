@@ -1,6 +1,8 @@
 @import "rouge-base16-dark";
 @import "default_colors";
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Fauna+One);
 
 $body-background: $cod-grey !default;
 $body-foreground: $gallery !default;
@@ -497,93 +499,87 @@ a {
 
 /* image overlay in index.md */
 
-figure.snip1256 {
-  font-family: 'Raleway', Arial, sans-serif;
-  color: #fff;
+.snip1482 {
+  font-family: 'Fauna One', Arial, sans-serif;
   position: relative;
-  overflow: hidden;
-  margin: 10px;
-  min-width: 220px;
-  max-width: 310px;
-  max-height: 220px;
+  margin: 10px 20px;
+  min-width: 230px;
+  max-width: 295px;
+  min-height: 220px;
   width: 100%;
   color: #ffffff;
-  text-align: left;
-  background-color: #07090c;
+  text-align: right;
+  line-height: 1.4em;
+  background-color: #1a1a1a;
   font-size: 16px;
-  -webkit-perspective: 50em;
-  perspective: 50em;
 }
-figure.snip1256 * {
+.snip1482 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
-figure.snip1256 img {
+.snip1482 img {
+  position: absolute;
+  right: 0%;
+  top: 50%;
   opacity: 1;
   width: 100%;
-  -webkit-transform-origin: 50% 100%;
-  -ms-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
 }
-figure.snip1256 figcaption {
+.snip1482 figcaption {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 20px 0 20px 20px;
+}
+.snip1482 h2,
+.snip1482 p {
+  margin: 0;
+  width: 100%;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+}
+.snip1482 h2 {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.snip1482 p {
+  font-size: 0.8em;
+}
+.snip1482 a {
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
-  -webkit-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-  -webkit-transform-origin: 50% -50%;
-  -ms-transform-origin: 50% -50%;
-  transform-origin: 50% -50%;
+  right: 0;
   z-index: 1;
-  opacity: 0;
-  padding: 20px 30px;
 }
-figure.snip1256 h3,
-figure.snip1256 p {
-  line-height: 1.5em;
+.snip1482:hover img,
+.snip1482.hover img {
+  width: 55%;
+  right: -10%;
 }
-figure.snip1256 h3 {
-  margin: 0;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-figure.snip1256 p {
-  font-size: 0.8em;
-  font-weight: 500;
-  margin: 0 0 15px;
-}
-figure.snip1256 .read-more {
-  border: 2px solid #ffffff;
-  padding: 0.5em 1em;
-  font-size: 0.8em;
-  text-decoration: none;
-  color: #ffffff;
-  display: inline-block;
-}
-figure.snip1256 .read-more:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
-figure.snip1256:hover img{
-  -webkit-transform: rotateX(90deg);
-  transform: rotateX(90deg);
-  opacity: 0;
-}
-figure.snip1256:hover figcaption {
-  -webkit-transform: rotateX(0deg);
-  transform: rotateX(0deg);
+.snip1482:hover figcaption h2,
+.snip1482.hover figcaption h2,
+.snip1482:hover figcaption p,
+.snip1482.hover figcaption p {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
   opacity: 1;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
 }
+
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
-  width: 33.33%;
+  width: 45%;
   padding: 5px;
 }
 

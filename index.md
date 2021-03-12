@@ -4,29 +4,29 @@ title: ./notes
 ---
 <div class="row">
   <div class="column">
-    <figure class="snip1256">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample42.jpg" alt="sample42"/>
-      <figcaption>
-        <h3>Dylan Meringue</h3>
-        <p>The strength to change what I can, the inability to accept what I can't and the incapacity to tell the difference.</p><a href="#" class="read-more">Read More</a>
-      </figcaption>
-    </figure>
+  <figure class="snip1482">
+<figcaption>
+  <h2>Norman Gordon</h2>
+  <p>You don't get to be mom if you can't fix everything just right.</p>
+</figcaption>
+<a href="#"></a><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample45.jpg" alt="sample45" />
+</figure>
   </div>
   <div class="column">
-    <figure class="snip1256">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample20.jpg" alt="sample20"/>
-      <figcaption>
-        <h3>Penny Tool</h3>
-        <p>Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!</p><a href="#" class="read-more">Read More</a>
-      </figcaption>
-    </figure>
+  <figure class="snip1482">
+<figcaption>
+  <h2>Desmond Eagle</h2>
+  <p>Until you stalk and overrun, you can't devour anyone.</p>
+</figcaption>
+<a href="#"></a><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample59.jpg" alt="sample59" />
+</figure>
   </div>
   <div class="column">
-    <figure class="snip1256">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample22.jpg" alt="sample22"/>
-      <figcaption>
-        <h3>Abraham Pigeon</h3>
-        <p>Sometimes I think the surest sign that intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p><a href="#" class="read-more">Read More</a>
-      </figcaption>
-    </figure>
+  <figure class="snip1482">
+<figcaption>
+  <h2>Benjamin Evalent</h2>
+  <p>There's never enough time to do all the nothing you want.</p>
+</figcaption>
+<a href="#"></a><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample60.jpg" alt="sample60" />
+</figure>
   </div>
